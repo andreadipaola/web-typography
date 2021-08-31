@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Light-webfont.woff") format("woff");
+}
+
+/* DON'T NAME FONT FAMILIES LIKE THIS */
+@font-face {
+  font-family: "Roboto Light Italic";
+  src: url("Roboto-LightItalic-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("Roboto-Bold-webfont.woff") format("woff");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +21,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 1.8em;
   color: #5D6063;
@@ -164,6 +180,17 @@ nav a:visited:active {
   background-color: #3F7CC4;
 }
 
+em, strong {
+  font-synthesis: none;
+}
+
+em {
+  font-family: "Roboto Light Italic", serif;
+}
+
+strong {
+  font-family: "Roboto Bold", serif;
+}
 
 @media only screen and (min-width: 580px) {
   .section {
